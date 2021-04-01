@@ -1,0 +1,28 @@
+version: "3.7"
+
+services:
+  mobifone_backend:
+    container_name: mobifone_backend
+    build: mobifone_backend
+    working_dir: /src/app
+    ports:
+      - 3400:3400
+    volumes:
+      - ./mobifone_backend:/src/app
+      - /src/app/node_modules
+    networks:
+        - mobifone
+  free_mobifone:
+    container_name: free_mobifone
+    build: free_mobifone
+    working_dir: /src/app
+    ports:
+      - 3600:3600
+    volumes:
+      - ./free_mobifone:/src/app
+      - /src/app/node_modules
+    networks:
+      - mobifone
+networks:
+  mobifone:
+        

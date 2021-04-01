@@ -1,0 +1,28 @@
+2020/05/27 10:41:00 [error] 49#49: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://172.18.0.23:8006/", host: "localhost:8003"
+2020/05/27 10:41:00 [error] 49#49: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "http://172.18.0.23:8006/favicon.ico", host: "localhost:8003", referrer: "http://localhost:8003/"
+2020/05/27 10:42:32 [error] 49#49: *29 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "POST /graphql HTTP/1.1", upstream: "http://172.18.0.25:80/graphql", host: "localhost:8003", referrer: "http://localhost:8003/graphql"
+2020/05/27 10:43:06 [error] 49#49: *29 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "POST /graphql HTTP/1.1", upstream: "http://172.18.0.25:80/graphql", host: "localhost:8003", referrer: "http://localhost:8003/graphql"
+2020/05/28 03:40:11 [emerg] 1#1: host not found in upstream "integration-service" in /etc/nginx/conf.d/insurwin-frontend.conf:18
+2020/05/28 04:04:37 [emerg] 1#1: host not found in upstream "integration-service" in /etc/nginx/conf.d/insurwin-frontend.conf:18
+2020/09/24 07:36:16 [error] 20#20: *354 upstream timed out (110: Operation timed out) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /?apiKey=412d2af0-a96d-11ea-80ab-75e0f87894a9 HTTP/1.1", upstream: "http://172.18.0.22:8006/?apiKey=412d2af0-a96d-11ea-80ab-75e0f87894a9", host: "localhost:8003", referrer: "http://localhost:8003/?apiKey=412d2af0-a96d-11ea-80ab-75e0f87894a9"
+2020/09/24 07:36:19 [error] 20#20: *357 connect() failed (113: Host is unreachable) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /?apiKey=412d2af0-a96d-11ea-80ab-75e0f87894a9 HTTP/1.1", upstream: "http://172.18.0.22:8006/?apiKey=412d2af0-a96d-11ea-80ab-75e0f87894a9", host: "localhost:8003", referrer: "http://localhost:8003/?apiKey=412d2af0-a96d-11ea-80ab-75e0f87894a9"
+2020/11/01 19:24:09 [emerg] 1#1: host not found in upstream "integration-service" in /etc/nginx/conf.d/insurwin-frontend.conf:18
+2020/11/01 19:24:36 [emerg] 1#1: host not found in upstream "integration-service" in /etc/nginx/conf.d/insurwin-frontend.conf:18
+2020/11/01 19:25:49 [emerg] 1#1: host not found in upstream "integration-service" in /etc/nginx/conf.d/insurwin-frontend.conf:18
+2020/11/01 19:29:45 [error] 48#48: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET / HTTP/1.1", upstream: "http://172.18.0.15:8006/", host: "localhost:8003"
+2020/11/01 19:29:45 [error] 48#48: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: , request: "GET /favicon.ico HTTP/1.1", upstream: "http://172.18.0.15:8006/favicon.ico", host: "localhost:8003", referrer: "http://localhost:8003/"
+2021/04/01 09:33:47 [crit] 1#1: pread() "/etc/nginx/conf.d/mobifone-frontend.conf" failed (21: Is a directory)
+2021/04/01 09:47:03 [emerg] 1#1: invalid condition "!$cookie_fileURI" in /etc/nginx/conf.d/mobifone-frontend.conf:7
+2021/04/01 09:50:28 [error] 24#24: *1 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 172.19.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:1996"
+2021/04/01 09:50:28 [error] 24#24: *1 open() "/etc/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.19.0.1, server: , request: "GET /favicon.ico HTTP/1.1", host: "localhost:1996", referrer: "http://localhost:1996/"
+2021/04/01 10:16:42 [error] 24#24: *3 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 172.19.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:1996"
+2021/04/01 10:17:40 [error] 24#24: *3 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 172.19.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:1996"
+2021/04/01 10:17:41 [error] 24#24: *3 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 172.19.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:1996"
+2021/04/01 10:17:41 [error] 24#24: *3 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 172.19.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:1996"
+2021/04/01 10:17:41 [error] 24#24: *3 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 172.19.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:1996"
+2021/04/01 10:17:41 [error] 24#24: *3 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 172.19.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:1996"
+2021/04/01 10:17:41 [error] 24#24: *3 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 172.19.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:1996"
+2021/04/01 10:17:42 [error] 24#24: *3 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 172.19.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:1996"
+2021/04/01 10:17:42 [error] 24#24: *3 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 172.19.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:1996"
+2021/04/01 10:17:42 [error] 24#24: *3 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 172.19.0.1, server: , request: "GET / HTTP/1.1", host: "localhost:1996"
+2021/04/01 10:22:40 [emerg] 1#1: invalid condition "!$cookie_fileURI" in /etc/nginx/conf.d/mobifone-frontend.conf:8

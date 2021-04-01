@@ -23,6 +23,29 @@ services:
       - /src/app/node_modules
     networks:
       - mobifone
+  mobifone-frontend-gateway:
+    networks:
+      - mobifone
+    build:
+      context: ./mobifone-frontend-gateway
+    image: mobifone-frontend-gateway-image
+    container_name: mobifone-frontend-gateway-container
+    ports:
+      - '1996:1996'
+    volumes:
+      - './mobifone-frontend-gateway/mobifone-frontend.conf:/etc/nginx/conf.d/mobifone-frontend.conf'
+      - './mobifone-frontend-gateway/log:/var/log/nginx'
+    links:
+      - mobifone_backend
+    depends_on:
+      - mobifone_backend
+    command:
+      - /wait-for-it.sh
+      - 'mobifone-frontend:1996'
+      - '--'
+      - nginx
+      - '-g'
+      - daemon off;
 networks:
   mobifone:
         

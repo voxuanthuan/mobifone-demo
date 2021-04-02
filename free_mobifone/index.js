@@ -4,7 +4,7 @@ const app = express()
 const port = 3600
 app.get('/', (req, res) => {
   const {query} = req;
-  res.send(`Hello Tdsai! ${query.link}`)
+  res.redirect('http://localhost:1996/?msisdn=123213213')
 })
 
 app.listen(port, () => {
